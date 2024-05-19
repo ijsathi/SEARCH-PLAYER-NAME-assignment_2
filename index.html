@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>G A M I O</title>
+    <link rel="icon" href="imgs/logo 2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" text-info">
+    <section class="container">
+        <!-- navabar start  -->
+        <section id="home">
+            <header class="s_header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt=""></a>
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#players">Player's</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#login">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <!-- navbar end -->
+        <!-- banner start -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Pro Players all are here</h1>
+                    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                    <span class="separator">||</span>
+                    <a href="#players">Players</a>
+            </div>
+        </section>
+
+        <!-- Search Part Start -->
+        <section id="players">
+            <div id="search-section" class=" d-flex align-items-center justify-content-center mt-5">
+                <div class='container text-center pb-5'>
+                    <h2 style="color: #9c55eb; font-weight: bold;">SEARCH<span class='text-light'> BY PLAYER NAME</span>
+                    </h2>
+                    <form id="searchForm" action="#" method='get'>
+                        <div class="input-group w-75 m-auto mb-3">
+                            <input type="text" class="form-control" placeholder="Enter player name..."
+                                aria-describedby="button-addon2" name='search_query' id="searchInput">
+                            <button class="btn" style="background-color: #9c55eb; font-weight: bold; color: #ffffff;"
+                                type="submit" id="button-addon2">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <!-- Search Part end -->
+
+        <!-- players part start  -->
+        <section>
+            <div class="row d-flex ">
+                <!-- Added players part start -->
+                <div class="col-sm-12 col-md-3 order-md-2">
+                    <h3 class="mb-4 text-light" > Total <span style="color: #9c55eb; font-weight: bold;">Player's</span> : <span id="added-players-qunatity"></span></h3>
+                    <div id="added-players-container" class="row row-cols-1 row-cols-md-1 g-2  p-2">
+
+                    </div>
+                </div>
+                <!-- Added players part end -->
+
+
+                <!-- all players part start -->
+                <div class="col-sm-12 col-md-9 order-md-1">
+                    <div id="players-container" class="row row-cols-1 row-cols-md-3 g-2 p-2">
+
+                    </div>
+                </div>
+                <!-- all players part end -->
+
+            </div>
+
+
+            <!-- Modal part start -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark border border-3 border-info">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-light" id="single-player-title">player name</h1>
+                        </div>
+                        <div id="single-player-body" class="modal-body p-0 bg-dark">
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button style="background-color: #9c55eb;color: #ffffff;" type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal part end -->
+
+
+        </section>
+        <!-- players part end  -->
+        <div class="pagination" id="pagination"></div>
+    </section>
+
+    <!-- footer -->
+    <footer id="login">
+        <div>
+        <small>Copyright&copy;2024 || Israt Zahan Sathi <br>Agargaon, Dhaka-1207</small>
+        <ul class="f-icon">
+            <li class="">
+                <a class="nav-link" href="https://github.com/ijsathi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="https://www.linkedin.com/in/ijsathi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="https://m.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

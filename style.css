@@ -1,0 +1,147 @@
+body{
+    background: #0b0c10;
+}
+.s_header{
+    background: #4b1587;
+}
+.s_header a{
+    color: white;
+    font-weight: bold;
+}
+.s_header a:hover{
+    color: #e49baa;
+}
+.s_header img{
+    width: 110px;
+    margin-left: 90px;
+}
+.s_header ul{
+    margin-right: 90px;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden; /* Ensure child elements do not overflow */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("imgs/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.9px); /* Adjust the blur radius as needed */
+    z-index: 1;
+}
+.banner-content {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the blurred background */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.banner-content a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.banner-content a:hover {
+    text-decoration: underline;
+}
+.banner-content .separator {
+    margin: 0 5px;
+}
+
+/* for card */
+.p-card{
+    background: linear-gradient(to top, #2b1045, #192248);
+}
+.card-img{
+    background-image: url("https://img.freepik.com/premium-photo/purple-yellow-background-with-purple-background-purple-background-with-light-effect_319965-548.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-name span a{
+    text-decoration: none;
+    font-size: 6px;
+    padding: 6px;
+    padding-top: 9px;
+    border-radius: 50%;
+    background: #fff;
+    color: #4b1587;
+}
+.p-name span{
+    margin-left: 20px;
+}
+.add-btn{
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+    color: #fff;
+    
+}
+.add-btn:hover{
+    background: rgb(220, 206, 242);
+    background: linear-gradient(0deg, rgb(198, 179, 227) 0%, rgb(205, 181, 226) 100%);
+}
+.details-btn:hover{
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    color: #fff;
+}
+.add-btn:before, .details-btn:before {
+    height: 0%;
+    width: 2px;
+}
+.add-btn:hover, .details-btn:hover {
+    box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
+                -2px -2px 3px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 2px 2px 3px 0 rgba(0, 0, 0, .4);
+}
+.details-btn{
+    background: rgb(220, 206, 242);
+    background: linear-gradient(0deg, rgb(198, 179, 227) 0%, rgb(205, 181, 226) 100%);
+    border: none;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.pagination button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/* footer */
+footer div{
+    text-align: center;
+    padding: 50px 50px 5px 50px;
+    background-color: #2b1045;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.f-icon{
+    display: flex;
+    justify-content: center;
+}
+.f-icon li{
+    list-style:  none;
+    margin-right: 30px;
+    font-size: 26px;
+    color: #ffffff;
+}
